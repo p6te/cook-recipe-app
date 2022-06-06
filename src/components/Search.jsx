@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "../sass/search.scss";
+import { ReactComponent as Logo } from "../logo.svg";
 
 export default function Search() {
   const [input, setInput] = useState("");
@@ -19,9 +20,12 @@ export default function Search() {
     setInput(e.target.value);
   };
   return (
-    <form className="search" onSubmit={handleSubmit}>
-      <FaSearch />
-      <input type="text" value={input} onChange={handleInput} />
-    </form>
+    <nav>
+      <Logo  className="logo"/>
+      <form className="search" onSubmit={handleSubmit}>
+        <FaSearch />
+        <input type="text" value={input} onChange={handleInput} />
+      </form>
+    </nav>
   );
 }

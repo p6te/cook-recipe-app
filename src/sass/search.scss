@@ -1,3 +1,7 @@
+nav {
+  position: relative;
+}
+
 .search {
   position: relative;
   width: 50%;
@@ -30,4 +34,11 @@
     color: rgb(0, 0, 0);
     color: white;
   }
+}
+
+.logo {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  bottom: 0;
 }
