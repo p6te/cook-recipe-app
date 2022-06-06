@@ -1,7 +1,10 @@
-.veggie, .popular {
+.veggie,
+.popular {
   &.wrapper {
-    margin: 0 auto;
-    width: 80%;
+
+    h3 {
+      margin: 2rem;
+    }
   }
   &.card {
     min-height: 20rem;
@@ -46,7 +49,6 @@
       height: 100%;
       object-fit: cover;
       background-position: center;
-      
     }
   }
 }

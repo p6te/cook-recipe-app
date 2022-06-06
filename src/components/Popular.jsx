@@ -3,6 +3,7 @@ import "../sass/cards.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
+
 function Popular() {
   const [popular, setPopular] = useState([]);
 
