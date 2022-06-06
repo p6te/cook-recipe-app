@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+  width: 50%;
+  margin: 3rem auto;
+  text-align: center;
+
+  input {
+    width: 100%;
+    border: none;
+
+    background: rgb(87, 87, 87);
+    background: linear-gradient(
+      41deg,
+      rgba(87, 87, 87, 1) 0%,
+      rgba(23, 23, 23, 1) 100%
+    );
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+  svg {
+    position: absolute;
+    left: 2rem;
+    height: 100%;
+    transform: scale(1.5);
+    color: rgb(0, 0, 0);
+    color: white;
+  }
+}

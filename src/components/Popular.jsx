@@ -33,7 +33,7 @@ function Popular() {
     <div>
       <div className="popular wrapper">
         <h3>Popular picks</h3>
-        <Splide options={{ perPage: 3 }}>
+        <Splide options={{ perPage: 4 }}>
           {popular.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
