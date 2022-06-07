@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "../sass/recipes.scss";
 
 function Searched() {
@@ -27,7 +28,7 @@ function Searched() {
     return search.map((item) => {
       return (
         <div className="card" key={item.id}>
-          <Link to={"/recipe/" + item.id}>
+          <Link to={"/cook-recipe-app/recipe/" + item.id}>
             <img src={item.image} alt={item.title} />
             <h4>{item.title}</h4>
           </Link>
@@ -37,9 +38,15 @@ function Searched() {
   }
 
   return (
-    <div className="recipes">
+    <motion.div
+      className="recipes"
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exited={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {search.length === 0 ? <h3>There is no results...</h3> : <Results />}
-    </div>
+    </motion.div>
   );
 }
 

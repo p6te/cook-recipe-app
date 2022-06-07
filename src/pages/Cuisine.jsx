@@ -25,7 +25,7 @@ export default function Cuisine() {
     return cuisine.map((item) => {
       return (
         <div className="card" key={item.id}>
-          <Link to={"/recipe/" + item.id}>
+          <Link to={"/cook-recipe-app/recipe/" + item.id}>
             <img src={item.image} alt={item.title} />
             <h4>{item.title}</h4>
           </Link>
@@ -35,8 +35,14 @@ export default function Cuisine() {
   }
 
   return (
-    <div className="recipes">
+    <motion.div
+      className="recipes"
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exited={{opacity: 0}}
+      transition={{duration: 0.5}}
+    >
       <Results />
-    </div>
+    </motion.div>
   );
 }

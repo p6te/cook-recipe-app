@@ -8,9 +8,7 @@ import { Link } from "react-router-dom";
 function Veggie() {
   const [veggie, setVeggie] = useState([]);
 
-  useEffect(() => {
-    getVeggie();
-  }, []);
+
 
   const getVeggie = async () => {
     const check = localStorage.getItem("veggie");
@@ -18,6 +16,7 @@ function Veggie() {
 
     if (check != null) {
       setVeggie(checkJson);
+      console.log("podmiana");
     } else {
       const api = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
@@ -26,8 +25,13 @@ function Veggie() {
       localStorage.setItem("veggie", JSON.stringify(data.recipes));
 
       setVeggie(data.recipes);
+      console.log("wstawienie");
     }
   };
+
+  useEffect(() => {
+    getVeggie();
+  }, []);
 
   return (
     <div>
@@ -45,7 +49,7 @@ function Veggie() {
             return (
               <SplideSlide key={recipe.id}>
                 <div className="veggie card">
-                  <Link to={"/recipe/" + recipe.id}>
+                  <Link to={"/cook-recipe-app/recipe/" + recipe.id}>
                     <p>{recipe.title}</p>
                     <div></div>
                     <img src={recipe.image} alt={recipe.title} />

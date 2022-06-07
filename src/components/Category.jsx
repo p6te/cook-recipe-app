@@ -6,22 +6,22 @@ import "../sass/category.scss";
 export default function Category() {
   return (
     <div className="categories">
-      <NavLink className="category" to="/cuisine/italian">
+      <NavLink className="category" to="/cook-recipe-app/cuisine/italian">
         <FaPizzaSlice className="icon" />
         <h4>Italian</h4>
       </NavLink>
-      <NavLink className="category" to="/cuisine/american">
+      <NavLink className="category" to="/cook-recipe-app/cuisine/american">
         <FaHamburger className="icon" />
         <h4>American</h4>
       </NavLink>
-      <NavLink className="category" to="/cuisine/thai">
+      <NavLink className="category" to="/cook-recipe-app/cuisine/thai">
         <GiNoodles className="icon" />
         <h4> Thai</h4>
       </NavLink>
 
-      <NavLink className="category" to="/cuisine/japanese">
+      <NavLink className="category" to="/cook-recipe-app/cuisine/korean">
         <GiChopsticks className="icon" />
-        <h4>Japanese</h4>
+        <h4>Korean</h4>
       </NavLink>
     </div>
   );
