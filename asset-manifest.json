@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cook-recipe-app/static/css/main.d95ec414.css",
-    "main.js": "/cook-recipe-app/static/js/main.f0707c4f.js",
+    "main.css": "/cook-recipe-app/static/css/main.efcd9019.css",
+    "main.js": "/cook-recipe-app/static/js/main.eb59de11.js",
     "static/media/logo.svg": "/cook-recipe-app/static/media/logo.f68ddaff887449e524fcad00ee841d0c.svg",
     "index.html": "/cook-recipe-app/index.html",
-    "main.d95ec414.css.map": "/cook-recipe-app/static/css/main.d95ec414.css.map",
-    "main.f0707c4f.js.map": "/cook-recipe-app/static/js/main.f0707c4f.js.map"
+    "main.efcd9019.css.map": "/cook-recipe-app/static/css/main.efcd9019.css.map",
+    "main.eb59de11.js.map": "/cook-recipe-app/static/js/main.eb59de11.js.map"
   },
   "entrypoints": [
-    "static/css/main.d95ec414.css",
-    "static/js/main.f0707c4f.js"
+    "static/css/main.efcd9019.css",
+    "static/js/main.eb59de11.js"
   ]
 }
